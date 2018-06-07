@@ -6,7 +6,7 @@ void pr_001() {
 }
 
 void pr_002() {
-	//ハローワールド stdはunsigneしているので省略できる
+	//ハローワールド stdはusingしているので省略できる
 	std::cout << "std::cout Hello World!!!" << endl;
 }
 
