@@ -1,4 +1,5 @@
 #include "Lesson4_switch.h"
+#include "Lesson5_error.h"
 
 
 
@@ -19,49 +20,51 @@ void Lesson4_switch::calc()
 		switch (ope)
 		{
 		case 1:
-			cout << "‘«‚µŽZ" << endl;
-			cout << "‚Ð‚Æ‚Â‚ß‚Ì”Žš‚ð“ü—Í" << endl;
-			cin >> x;
-			cout << "‚Ó‚½‚Â‚ß‚Ì”Žš‚ð“ü—Í" << endl;
-			cin >> y;
+			cout << ja_PlusStr << endl;
+			inputNum_1_2(x, y);
 			switchResult = x + y;
-			cout << "‘«‚µŽZ‚Ì“š‚¦" << endl;
-			cout << switchResult << endl;
+			cout << ja_PlusStr;
 			break;
 		case 2:
-			cout << "ˆø‚«ŽZ" << endl;
-			cout << "‚Ð‚Æ‚Â‚ß‚Ì”Žš‚ð“ü—Í" << endl;
-			cin >> x;
-			cout << "‚Ó‚½‚Â‚ß‚Ì”Žš‚ð“ü—Í" << endl;
-			cin >> y;
+			cout << ja_MinusStr << endl;
+			inputNum_1_2(x, y);
 			switchResult = x - y;
-			cout << "ˆø‚«ŽZ‚Ì“š‚¦" << endl;
-			cout << switchResult << endl;
+			cout << ja_MinusStr;
 			break;
 		case 3:
-			cout << "‚©‚¯ŽZ" << endl;
-			cout << "‚Ð‚Æ‚Â‚ß‚Ì”Žš‚ð“ü—Í" << endl;
-			cin >> x;
-			cout << "‚Ó‚½‚Â‚ß‚Ì”Žš‚ð“ü—Í" << endl;
-			cin >> y;
+			cout << ja_MultiplyStr << endl;
+			inputNum_1_2(x, y);
 			switchResult = x * y;
-			cout << "‚©‚¯ŽZ‚Ì“š‚¦" << endl;
-			cout << switchResult << endl;
+			cout << ja_MultiplyStr;
 			break;
 		case 4:
-
-			cout << "‚í‚èŽZ" << endl;
-			cout << "‚Ð‚Æ‚Â‚ß‚Ì”Žš‚ð“ü—Í" << endl;
-			cin >> x;
-			cout << "‚Ó‚½‚Â‚ß‚Ì”Žš‚ð“ü—Í" << endl;
-			cin >> y;
+			cout << ja_DividStr << endl;
+			inputNum_1_2(x, y);
+			if (x == 0 || y == 0)
+			{
+				Lesson5_error ls5;
+				ls5.Lesson5_error::Lesson5_error();
+			}else{
 			switchResult = x / y;
-			cout << "‚í‚èŽZ‚Ì“š‚¦" << endl;
-			cout << switchResult << endl;
+			cout << ja_DividStr;
+			}
 			break;
 		}
+		cout << "‚Ì“š‚¦" << endl;
+		getchar();
+		cout << switchResult << endl;
+		getchar();
+
 	}
-	getchar();
+	
+}
+
+void Lesson4_switch::inputNum_1_2(int &x, int &y)
+{
+	cout << "‚Ð‚Æ‚Â‚ß‚Ì”Žš‚ð“ü—Í" << endl;
+	cin >> x;
+	cout << "‚Ó‚½‚Â‚ß‚Ì”Žš‚ð“ü—Í" << endl;
+	cin >> y;
 }
 
 bool Lesson4_switch::calcCheckOpe()
