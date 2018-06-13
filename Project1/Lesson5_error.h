@@ -13,6 +13,6 @@ public:
 	Lesson5_error();
 	~Lesson5_error();
 
-	string errorOutput = "ƒGƒ‰[‚Å‚·";
+	string errorOutput = "error";
 };
 
