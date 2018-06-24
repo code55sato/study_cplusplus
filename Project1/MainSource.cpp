@@ -19,8 +19,19 @@ int main() {
 	ls4.Lesson4_switch::calc();
 	*/
 
+	/*
 	Lesson6_for ls6;
-	//ls6.Lesson6_for::counterNumber10();
-	//ls6.Lesson6_for::counterNumber20();
+	ls6.Lesson6_for::counterNumber10();
+	ls6.Lesson6_for::counterNumber20();
 	ls6.Lesson6_for::counterNumber30();
+	*/
+
+	Lesson7_pointer ls7;
+	//ls7.Lesson7_pointer::pointerTestReturnIntNum();
+	//ls7.Lesson7_pointer::pointerTestReturnSwap();
+	int ls7_pointerTest1 = 5;
+	int ls7_pointerTest2 = 10;
+	ls7.pointerTestReturnSwap(&ls7_pointerTest1,&ls7_pointerTest2);
+	cout << "1”Ô–Ú‚Æ2”Ô–Ú‚Ì”Žš‚ª“ü‚ê‘Ö‚í‚Á‚Ä1”Ô–Ú‚Í" << ls7_pointerTest1 << endl;
+	getchar();
 }
