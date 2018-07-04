@@ -19,9 +19,12 @@ public:
 	int* p_pointerTestIntNum1 = &pointerTestIntNum1;
 	int* p_pointerTestIntNum2 = &pointerTestIntNum2;
 	int temp;
+	int& r_pointerTestIntNum1 = pointerTestIntNum1;
 
 	void pointerTestReturnIntNum();
 	void pointerTestReturnSwap();
+	void pointerLesson(int * x, int * y, int * a);
+	void pointerLesson(int& x, int& y, int& a);
 	int pointerTestReturnSwap(int* p_pointerTestIntNum1,int* p_pointerTestIntNum2);
 
 };

@@ -23,9 +23,5 @@ public:
 };
 
 
-/*
-string strHello = "Hello";
-string strMorning = "Good Morning";
-string strEvening = "Good Evening";
-*/
+
 
