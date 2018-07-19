@@ -26,6 +26,7 @@ int main() {
 	ls6.Lesson6_for::counterNumber30();
 	*/
 
+	/*
 	Lesson7_pointer ls7;
 	//ls7.Lesson7_pointer::pointerTestReturnIntNum();
 	//ls7.Lesson7_pointer::pointerTestReturnSwap();
@@ -39,4 +40,8 @@ int main() {
 	//ls7.Lesson7_pointer::pointerLesson(&tx, &ty, &ta);
 	ls7.Lesson7_pointer::pointerLesson(tx, ty, ta);
 	getchar();
+	*/
+
+	Lesson8_array ls8;
+	ls8.timeZoneChangeGreeting();
 }

@@ -3,6 +3,7 @@
 #include "Lesson4_switch.h"
 #include "Lesson6_for.h"
 #include "Lesson7_pointer.h"
+#include "Lesson8_array.h"
 
 
 
